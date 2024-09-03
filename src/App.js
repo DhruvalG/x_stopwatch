@@ -1,8 +1,10 @@
 import './App.css';
-import StopWatch from './StopWatch';
+import StopWatchFunctions from './StopWatchFunctions';
 function App() {
   return (
-    <StopWatch />
+    <div>
+      <StopWatchFunctions />
+    </div>
   );
 }
 

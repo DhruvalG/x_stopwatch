@@ -56,6 +56,7 @@ class StopWatchFunctions extends Component {
         let mainTimer = `${this.showInMinutes()}:${this.showInSeconds()}`
         return (
             <div>
+                <h1>Stopwatch</h1>
                 <p testid="timer">
                     time: {mainTimer}
                 </p>
