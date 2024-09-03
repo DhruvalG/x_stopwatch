@@ -50,7 +50,7 @@ class StopWatchFunctions extends Component {
             <div>
                 <h1>Stopwatch</h1>
                 <p testid="timer">
-                    time: {mainTimer}
+                    Time: {mainTimer}
                 </p>
                 <div>
                     <button
