@@ -13,7 +13,7 @@ class StopWatchFunctions extends Component {
         const {timeInSeconds} = this.state
         const minutes = Math.floor(timeInSeconds / 60)
         if (minutes < 10) {
-        return `0${minutes}`
+        return `${minutes}`
         }
         return minutes
     }
@@ -56,9 +56,9 @@ class StopWatchFunctions extends Component {
         let mainTimer = `${this.showInMinutes()}:${this.showInSeconds()}`
         return (
             <div>
-                <h1 testid="timer">
-                    {mainTimer}
-                </h1>
+                <p testid="timer">
+                    time: {mainTimer}
+                </p>
                 <div>
                     <button
                         className="start-button"
