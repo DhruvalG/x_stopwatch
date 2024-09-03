@@ -29,10 +29,6 @@ class StopWatchFunctions extends Component {
 
     startButton = () => {
         this.timerId = setInterval(this.clockFunc, 1000)
-        let startButton = document.getElementsByClassName("start-button");
-        let stopButton = document.getElementsByClassName("stop-button");
-        startButton[0].style.display = "none";
-        stopButton[0].style.display = "";
     }
     
     clockFunc = () => {
@@ -41,10 +37,6 @@ class StopWatchFunctions extends Component {
 
     stopButton = () => {
         clearInterval(this.timerId)
-        let startButton = document.getElementsByClassName("start-button");
-        let stopButton = document.getElementsByClassName("stop-button");
-        startButton[0].style.display = "";
-        stopButton[0].style.display = "none";
     }
 
     resetButton = () => {
@@ -71,7 +63,6 @@ class StopWatchFunctions extends Component {
                     <button
                         className="stop-button"
                         type="button"
-                        style={{display:"none"}}
                         onClick={this.stopButton}
                     >
                         Stop
